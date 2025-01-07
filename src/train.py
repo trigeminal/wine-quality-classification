@@ -1,28 +1,19 @@
 import mlflow
-import mlflow.tensorflow
-from mlflow.models.signature import infer_signature
+import mlflow.lightgbm
 from sklearn.metrics import mean_squared_error, mean_absolute_error
+from mlflow.models.signature import infer_signature
 
 
-def train_model(model, X_train, y_train, X_test, y_test, epochs=100, batch_size=32):
+def train_model(model, X_train, y_train, X_test, y_test):
     with mlflow.start_run():
-        mlflow.log_param("model_type", "Wide & Deep Network")
-        mlflow.log_param("optimizer", "Adam")
-        mlflow.log_param("epochs", epochs)
-        mlflow.log_param("batch_size", batch_size)
+        mlflow.log_param("model_type", "LightGBM")
+        mlflow.log_params(model.get_params())
 
         # Train the model
-        history = model.fit(
-            [X_train, X_train],
-            y_train,
-            validation_data=([X_test, X_test], y_test),
-            epochs=epochs,
-            batch_size=batch_size,
-            verbose=1,
-        )
+        model.fit(X_train, y_train)
 
-        # Evaluate the model
-        y_pred = model.predict([X_test, X_test])
+        # Make predictions
+        y_pred = model.predict(X_test)
 
         # Calculate metrics
         mse = mean_squared_error(y_test, y_pred)
@@ -32,16 +23,18 @@ def train_model(model, X_train, y_train, X_test, y_test, epochs=100, batch_size=
         mlflow.log_metric("mse", mse)
         mlflow.log_metric("mae", mae)
 
-        # Define the input signature
-        input_example = {"wide_input": X_train[:1], "deep_input": X_train[:1]}
-        signature = infer_signature(
-            input_example,
-            model.predict([input_example["wide_input"], input_example["deep_input"]]),
-        )
+        # Define input example and signature
+        input_example = X_train[
+            :1
+        ]  # Use the first row of training data as an input example
+        signature = infer_signature(input_example, model.predict(input_example))
 
-        # Log the model
-        mlflow.tensorflow.log_model(
-            model, "wide_deep_model", signature=signature, input_example=input_example
+        # Log the model with signature and input example
+        mlflow.lightgbm.log_model(
+            model,
+            "lightgbm_model",
+            signature=signature,
+            input_example=input_example,
         )
 
         # Print the metrics
