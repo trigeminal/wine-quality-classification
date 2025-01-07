@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Development/%40trigeminal/wine-quality-prediction/mlruns/0/9178035948d342cf97de8c26f9a3a94b/artifacts
+end_time: 1736290131273
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 9178035948d342cf97de8c26f9a3a94b
+run_name: charming-moth-965
+run_uuid: 9178035948d342cf97de8c26f9a3a94b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736290126104
+status: 3
+tags: []
+user_id: noeyi

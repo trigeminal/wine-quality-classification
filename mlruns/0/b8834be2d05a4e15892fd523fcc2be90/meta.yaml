@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Development/%40trigeminal/wine-quality-prediction/mlruns/0/b8834be2d05a4e15892fd523fcc2be90/artifacts
+end_time: 1736291452397
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: b8834be2d05a4e15892fd523fcc2be90
+run_name: puzzled-moth-776
+run_uuid: b8834be2d05a4e15892fd523fcc2be90
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736291446438
+status: 3
+tags: []
+user_id: noeyi

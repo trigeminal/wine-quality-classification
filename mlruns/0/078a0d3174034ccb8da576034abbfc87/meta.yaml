@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Development/%40trigeminal/wine-quality-prediction/mlruns/0/078a0d3174034ccb8da576034abbfc87/artifacts
+end_time: 1736291269269
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 078a0d3174034ccb8da576034abbfc87
+run_name: dapper-trout-662
+run_uuid: 078a0d3174034ccb8da576034abbfc87
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736291263531
+status: 3
+tags: []
+user_id: noeyi

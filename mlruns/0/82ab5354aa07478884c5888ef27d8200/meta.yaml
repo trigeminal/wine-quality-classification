@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Development/%40trigeminal/wine-quality-prediction/mlruns/0/82ab5354aa07478884c5888ef27d8200/artifacts
+end_time: 1736291312674
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 82ab5354aa07478884c5888ef27d8200
+run_name: ambitious-colt-705
+run_uuid: 82ab5354aa07478884c5888ef27d8200
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736291306760
+status: 3
+tags: []
+user_id: noeyi
