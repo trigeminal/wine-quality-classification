@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Development/%40trigeminal/wine-quality-prediction/mlruns/0/2f1842653e08491e89dc3b649fe543c8/artifacts
+end_time: 1736218842575
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 2f1842653e08491e89dc3b649fe543c8
+run_name: zealous-mink-894
+run_uuid: 2f1842653e08491e89dc3b649fe543c8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736218803515
+status: 3
+tags: []
+user_id: noeyi

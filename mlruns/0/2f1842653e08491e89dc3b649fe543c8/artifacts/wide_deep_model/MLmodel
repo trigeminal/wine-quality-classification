@@ -1,0 +1,31 @@
+artifact_path: wide_deep_model
+flavors:
+  python_function:
+    data: data
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.tensorflow
+    python_version: 3.12.6
+  tensorflow:
+    code: null
+    data: data
+    keras_version: 2.18.0
+    model_type: keras
+    save_format: tf
+mlflow_version: 2.19.0
+model_size_bytes: 85021
+model_uuid: f0b170d7fb2044ad98ff9adcd55eeaa0
+run_id: 2f1842653e08491e89dc3b649fe543c8
+saved_input_example_info:
+  artifact_path: input_example.json
+  serving_input_path: serving_input_example.json
+  type: ndarray
+signature:
+  inputs: '[{"name": "wide_input", "type": "tensor", "tensor-spec": {"dtype": "float64",
+    "shape": [-1, 11]}}, {"name": "deep_input", "type": "tensor", "tensor-spec": {"dtype":
+    "float64", "shape": [-1, 11]}}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float32", "shape": [-1,
+    1]}}]'
+  params: null
+utc_time_created: '2025-01-07 03:00:34.190173'

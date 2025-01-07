@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Development/%40trigeminal/wine-quality-prediction/mlruns/0/5f1952f889fa417e88e770470af12ae3/artifacts
+end_time: 1736218229376
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 5f1952f889fa417e88e770470af12ae3
+run_name: righteous-shrew-258
+run_uuid: 5f1952f889fa417e88e770470af12ae3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736218228749
+status: 4
+tags: []
+user_id: noeyi
