@@ -1,4 +1,4 @@
-# Wine Quality Prediction
+# Wine Quality Classification
 
 > Dataset used: **[Wine Quality Dataset](datasets/raw/)**  
 > Notebooks: **[Visualizations](https://nbviewer.org/github/trigeminal/wine-quality-prediction/blob/main/notebooks/visualizations.ipynb) | [Models](https://nbviewer.org/github/trigeminal/wine-quality-prediction/blob/main/notebooks/models.ipynb)**
