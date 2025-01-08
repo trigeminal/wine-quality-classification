@@ -38,6 +38,14 @@ Predicts wine quality using a fine-tuned LightGBM model. It includes data prepro
 
 - The graph suggests that alcohol content is sinificant factor in determining wine quality, with higher alcohol content wines generally having higher quality ratings.
 
+### Comparison of MAE and MSE for Different Models
+
+![Comparison of MAE and MSE for Different Models](docs/img/viz3.png)
+
+**Insights**
+
+- The LightGBM model has the lowest MAE and MSE values, indicating that it is the best model for predicting wine quality.
+
 ## License
 
 This project is licensed under the Apache License, Version 2.0 - see the [LICENSE](LICENSE) file for details.
