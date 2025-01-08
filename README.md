@@ -1,5 +1,8 @@
 # Wine Quality Prediction
 
+> Dataset used: **[Wine Quality Dataset](datasets/raw/)**  
+> Notebooks: **[Visualizations](https://nbviewer.org/github/trigeminal/wine-quality-prediction/blob/main/notebooks/visualizations.ipynb) | [Models](https://nbviewer.org/github/trigeminal/wine-quality-prediction/blob/main/notebooks/models.ipynb)**
+
 Predicts wine quality using a fine-tuned LightGBM model. It includes data preprocessing, model training, and evaluation, with experiment tracking and model management using MLflow.
 
 ## Features
@@ -17,10 +20,23 @@ Predicts wine quality using a fine-tuned LightGBM model. It includes data prepro
 - `config.py`: Configuration file with hyperparameters and settings.
 - `main.py`: Main script for running the entire pipeline.
 
-## Notebooks
+## Visualizations
 
-- **[Wine Quality Prediction—Visualization](https://nbviewer.org/github/trigeminal/wine-quality-prediction/blob/main/notebooks/visualizations.ipynb)** - For data visualization and exploration.
-- **[Wine Quality Prediction—Classification](https://nbviewer.org/github/trigeminal/wine-quality-prediction/blob/main/notebooks/models.ipynb)** - For model training and evaluation.
+### Distribution of the Target Variable
+
+![Distribution of the Target Variable](docs/img/viz1.png)
+
+**Insights**
+- The mofe frequent wine quality ratings are 5, 6, and 7.
+- The distribution of quality ratings is not symmetrical, it leans slightly to the right. This means there are more ratings on the higher end of the quality scale than on the lower end.
+
+### Alcohol vs. Volatile Acidity by Wine Quality
+
+![Alcohol vs. Volatile Acidity by Wine Quality](docs/img/viz2.png)
+
+**Insights**
+
+- The graph suggests that alcohol content is sinificant factor in determining wine quality, with higher alcohol content wines generally having higher quality ratings.
 
 ## License
 
